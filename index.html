@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional One Page Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav id="navbar">
+  <ul>
+    <li><a href="#home"><i class="fas fa-house"></i> Home</a></li>
+    <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Page Content -->
+  <div class="content">
+    <section id="home">
+        <ul>
+            <center>
+                <h2>Welcome to My Website</h2>
+                <h3><p>Innovative Solution for digital World!</p></h3>
+                <br><p>We're so glad you're here.</p></br>
+                <p>Take a look around and explore what we have to offer.</p>
+                <br><p>We're designed this website with you in mind,aiming to provide a valuable and engaging experience.</p></br>
+
+                <h3><p>Enjoy your visit.</p></h3>
+            </center>
+
+        </ul>
+        
+        </section>
+
+    <section id="services">
+        <center>
+      <br><h2>Our Services</h2></br>
+      <p>As per of task 1 at Prodigy InfoTech,I was assigned to design and develop a responsive landing page and the experience was both exciting and educational.</p>
+      <br><p>I'm thankful to Prodigy InfoTech for providing such a practical and meaningful opportunity.</p></br>
+        </center>
+    </section>
+
+    <section id="about">
+
+      <center>
+      <h2>About</h2>
+      <br><p>I'm Harini, currently pursuing a degree in Computer Science and Business System at Easwari Engineering college.I'm passionate about building solution that make lives easier and more creative.</p></br>
+      </center>
+    </section>
+
+    <section id="contact">
+        <center>
+      <h2>Contact</h2>
+      <br><p>Get in touch for more information or support.</p></br>
+      <br><p>Email:  harinib2703@gmail.com</p></br>
+      <br><p>LinkedIn:  https://www.linkedin.com/in/harini-b-002522328</p>
+      </center>
+    </section>
+  </div>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach((section) => observer.observe(section));
+  </script>
+</body>
+</html>
+
+
